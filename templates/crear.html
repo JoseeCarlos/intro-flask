@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Crear usuario
+{% endblock %}
+    {% block content %}
+        <h1>Crear</h1>
+        <form  method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos">
+            </div>
+            <button type="submit" class="btn btn-primary">Crear</button>
+        </form>
+    {% endblock %}
